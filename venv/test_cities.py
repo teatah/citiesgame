@@ -56,6 +56,18 @@ class TestCityGame(unittest.TestCase):
         self.assertEqual(new_current_city, "Москва")
         self.assertEqual(result_label, "Города нет в базе!")
 
+    def test_check_city_valid(self):
+        cities = ["Москва", "Астана", "Рим"]
+        current_city = "Москва"
+        result_label = ""
+        city_label = ""
+        # При последующих ходах проверять равенство первой буквы введенного и последней буквы текущего городов
+        new_current_city, result_label, city_label = CityGame.check_city("Астана", current_city, cities,
+                                                                         result_label, city_label)
+        self.assertEqual(new_current_city, "Астана")
+        self.assertEqual(result_label, "")
+        self.assertEqual(city_label, "Город: Астана")
+
 
 if __name__ == '__main__':
     unittest.main()
