@@ -97,6 +97,10 @@ class CityGame:
             result_label = "Введите город!"
             return current_city, result_label, city_label
 
+        current_city = city
+        city_label = "Город: {}".format(current_city)
+
+        return current_city, result_label, city_label
 
 # база городов
 cities = ["Москва", "Астана", "Амстердам", "Минск", "Рим", "Мадрид", "Осло", "Орел"]
