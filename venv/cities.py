@@ -93,6 +93,10 @@ class CityGame:
             result_label = "База городов пуста!"
             return current_city, result_label, city_label
 
+        if not city:
+            result_label = "Введите город!"
+            return current_city, result_label, city_label
+
 
 # база городов
 cities = ["Москва", "Астана", "Амстердам", "Минск", "Рим", "Мадрид", "Осло", "Орел"]
