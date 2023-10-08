@@ -97,6 +97,12 @@ class CityGame:
             if not city:
                 result_label = "Введите город!"
                 return current_city, result_label, city_label
+
+            last_char = current_city[-1].lower()
+            first_char = city[0].lower()
+
+            current_city = city
+            city_label = "Город: {}".format(current_city)
         else:
             if not city:
                 result_label = "Введите город!"
