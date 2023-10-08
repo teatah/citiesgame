@@ -97,6 +97,7 @@ class CityGame:
             result_label = "Введите город!"
             return current_city, result_label, city_label
 
+
         current_city = city
         city_label = "Город: {}".format(current_city)
 
