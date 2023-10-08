@@ -23,7 +23,16 @@ class TestCityGame(unittest.TestCase):
         self.assertEqual("", "")
         self.assertEqual(result_label, "Введите город!")
 
-
+    def test_check_city_blank_cur(self):
+        cities = ["Москва", "Астана", "Рим"]
+        result_label = ""
+        city_label = ""
+        # При первом ходе при вводе подходящего города ход принимается
+        current_city = ""
+        new_current_city, result_label, city_label = CityGame.check_city("Москва", current_city, cities, result_label, city_label)
+        self.assertEqual(new_current_city, "Москва")
+        self.assertEqual(result_label, "")
+        self.assertEqual(city_label, "Город: Москва")
 
 
 if __name__ == '__main__':
