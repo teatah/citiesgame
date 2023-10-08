@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="affe0911-bf16-4d38-8a45-8643fbd69252" name="Changes" comment="Test correct input on first move">
+    <list default="true" id="affe0911-bf16-4d38-8a45-8643fbd69252" name="Changes" comment="Test correct input on first move passed">
       <change beforePath="$PROJECT_DIR$/venv/test_cities.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/test_cities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696768931501</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Test correct input on first move passed">
+      <created>1696769061263</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696769061263</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +183,7 @@
     <MESSAGE value="Test blank input on first move" />
     <MESSAGE value="Test blank input on first move passed" />
     <MESSAGE value="Test correct input on first move" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test correct input on first move" />
+    <MESSAGE value="Test correct input on first move passed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test correct input on first move passed" />
   </component>
 </project>

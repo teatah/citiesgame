@@ -34,6 +34,17 @@ class TestCityGame(unittest.TestCase):
         self.assertEqual(result_label, "")
         self.assertEqual(city_label, "Город: Москва")
 
+    def test_check_city_blank_cur_not_in_base(self):
+        cities = ["Москва", "Астана", "Рим"]
+        result_label = ""
+        city_label = ""
+        # При первом ходе проверять город на наличие в базе
+        current_city = ""
+        new_current_city, result_label, city_label = CityGame.check_city("Саратов", current_city, cities,
+                                                                         result_label, city_label)
+        self.assertEqual(new_current_city, "")
+        self.assertEqual(result_label, "Города нет в базе!")
+
 
 if __name__ == '__main__':
     unittest.main()
