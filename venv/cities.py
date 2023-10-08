@@ -101,8 +101,10 @@ class CityGame:
             last_char = current_city[-1].lower()
             first_char = city[0].lower()
 
-            current_city = city
-            city_label = "Город: {}".format(current_city)
+            if city not in cities:
+                result_label = "Города нет в базе!"
+                return current_city, result_label, city_label
+
         else:
             if not city:
                 result_label = "Введите город!"

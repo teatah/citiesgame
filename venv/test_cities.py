@@ -68,6 +68,17 @@ class TestCityGame(unittest.TestCase):
         self.assertEqual(result_label, "")
         self.assertEqual(city_label, "Город: Астана")
 
+    def test_check_city_uncorrect(self):
+        cities = ["Москва", "Астана", "Рим"]
+        current_city = "Москва"
+        result_label = ""
+        city_label = ""
+        # При последующих ходах проверять равенство первой буквы введенного и последней буквы текущего
+        # городов и выводить ошибку
+        new_current_city, result_label, city_label = CityGame.check_city("Рим", current_city, cities,
+                                                                         result_label, city_label)
+        self.assertEqual(result_label, "Город введен неверно!")
+
 
 if __name__ == '__main__':
     unittest.main()
