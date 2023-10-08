@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="affe0911-bf16-4d38-8a45-8643fbd69252" name="Changes" comment="Test valid input on not first moves passed">
-      <change beforePath="$PROJECT_DIR$/venv/test_cities.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/test_cities.py" afterDir="false" />
+    <list default="true" id="affe0911-bf16-4d38-8a45-8643fbd69252" name="Changes" comment="Test invalid input on not first moves">
+      <change beforePath="$PROJECT_DIR$/venv/cities.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/cities.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696769891112</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Test invalid input on not first moves">
+      <created>1696770202209</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696770202209</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +239,7 @@
     <MESSAGE value="Test input existing in base on not first moves pased" />
     <MESSAGE value="Test valid input on not first moves" />
     <MESSAGE value="Test valid input on not first moves passed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test valid input on not first moves passed" />
+    <MESSAGE value="Test invalid input on not first moves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test invalid input on not first moves" />
   </component>
 </project>

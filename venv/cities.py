@@ -105,6 +105,12 @@ class CityGame:
                 result_label = "Города нет в базе!"
                 return current_city, result_label, city_label
 
+            if last_char != first_char:
+                result_label = "Город введен неверно!"
+                return current_city, result_label, city_label
+            else:
+                current_city = city
+                city_label = "Город: {}".format(current_city)
         else:
             if not city:
                 result_label = "Введите город!"
